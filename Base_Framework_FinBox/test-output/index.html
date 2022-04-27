@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
+              <span class="suite-name border-failed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+                    <span>C:\Users\user1\AppData\Local\Temp\testng-eclipse-1298010085\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">23 methods, 1 failed,  1 skipped,  21 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.KB_Flow" class="method navigator-link" hash-for-method="loanEligibilityAcceptLoanOffer">loanEligibilityAcceptLoanOffer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods skipped suite-Default_suite"> (hide)</a> <!-- hide-methods skipped suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods skipped suite-Default_suite"> (show)</a> <!-- show-methods skipped suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Default_suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.KB_Flow" class="method navigator-link" hash-for-method="youveGotALoanOf">youveGotALoanOf</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.KB_Flow" class="method navigator-link" hash-for-method="basicDetails(Duopk4809, 09, 08, 1996, 573201)">basicDetails(Duopk4809, 09, 08, 1996, 573201)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.KB_Flow" class="method navigator-link" hash-for-method="basicDetails(Duopk4809, 09, 08, 19, 573201)">basicDetails(Duopk4809, 09, 08, 19, 573201)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.KB_Flow" class="method navigator-link" hash-for-method="basicDetails(Duopk4809q, 09, 08, 1996, 57)">basicDetails(Duopk4809q, 09, 08, 1996, 57)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.KB_Flow" class="method navigator-link" hash-for-method="basicDetails(DUOPK4809Q, 09, 08, 1996, 573201)">basicDetails(DUOPK4809Q, 09, 08, 1996, 573201)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.KB_Flow" class="method navigator-link" hash-for-method="basicDetailsRadio">basicDetailsRadio</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.KB_Flow" class="method navigator-link" hash-for-method="businessDetails">businessDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.KB_Flow" class="method navigator-link" hash-for-method="checkbox">checkbox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.KB_Flow" class="method navigator-link" hash-for-method="documentsForKYC">documentsForKYC</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.KB_Flow" class="method navigator-link" hash-for-method="loanEligibility">loanEligibility</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.KB_Flow" class="method navigator-link" hash-for-method="loanOffer">loanOffer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.KB_Flow" class="method navigator-link" hash-for-method="personalDetails">personalDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.KB_Flow" class="method navigator-link" hash-for-method="personalInformationScripts(123!@#, Karthi@qwe)">personalInformationScripts(123!@#, Karthi@qwe)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.KB_Flow" class="method navigator-link" hash-for-method="personalInformationScripts(0123, 08123)">personalInformationScripts(0123, 08123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.KB_Flow" class="method navigator-link" hash-for-method="personalInformationScripts(Karthik, 12!)">personalInformationScripts(Karthik, 12!)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.KB_Flow" class="method navigator-link" hash-for-method="personalInformationScripts(Karthik()(), Karthi@gmail)">personalInformationScripts(Karthik()(), Karthi@gmail)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.KB_Flow" class="method navigator-link" hash-for-method="personalInformationScripts(Karthik raj t, karthirajgowda@gmail.com)">personalInformationScripts(Karthik raj t, karthirajgowda@gmail.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.KB_Flow" class="method navigator-link" hash-for-method="phoneNumberVerification">phoneNumberVerification</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.KB_Flow" class="method navigator-link" hash-for-method="phoneNumberVerificationOTP">phoneNumberVerificationOTP</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.KB_Flow" class="method navigator-link" hash-for-method="uploadAadhaar">uploadAadhaar</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.KB_Flow" class="method navigator-link" hash-for-method="uploadSelfie">uploadSelfie</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.KB_Flow" class="method navigator-link" hash-for-method="verifyAddress">verifyAddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Tests.KB_Flow</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loanEligibilityAcceptLoanOffer">
+                  </a> <!-- loanEligibilityAcceptLoanOffer -->
+                  <span class="method-name">loanEligibilityAcceptLoanOffer</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&quot;View Loan Offer&quot;]&quot;}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
+System info: host: &apos;TYSS-KARTHIK&apos;, ip: &apos;192.168.1.159&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [031357660fbc23319af4f313cfcb50a3, findElement {using=xpath, value=//span[text()=&quot;View Loan Offer&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\user1\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61980}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61980/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 031357660fbc23319af4f313cfcb50a3
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
+	at Generic.UtilityMethods.clickAction(UtilityMethods.java:149)
+	at Pages.Loan_Eligibility_AcceptLoanOffer_12.clickOnViewLoanOffer(Loan_Eligibility_AcceptLoanOffer_12.java:23)
+	at Tests.KB_Flow.loanEligibilityAcceptLoanOffer(KB_Flow.java:321)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Tests.KB_Flow</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="youveGotALoanOf">
+                  </a> <!-- youveGotALoanOf -->
+                  <span class="method-name">youveGotALoanOf</span>
+                  <div class="stack-trace">java.lang.Throwable: Method KB_Flow.youveGotALoanOf()[pri:0, instance:Tests.KB_Flow@1c7696c6] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-skipped -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Tests.KB_Flow</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="basicDetails(Duopk4809, 09, 08, 1996, 573201)">
+                  </a> <!-- basicDetails(Duopk4809, 09, 08, 1996, 573201) -->
+                  <span class="method-name">basicDetails</span>
+                  <span class="parameters">(Duopk4809, 09, 08, 1996, 573201)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="basicDetails(Duopk4809, 09, 08, 19, 573201)">
+                  </a> <!-- basicDetails(Duopk4809, 09, 08, 19, 573201) -->
+                  <span class="method-name">basicDetails</span>
+                  <span class="parameters">(Duopk4809, 09, 08, 19, 573201)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="basicDetails(Duopk4809q, 09, 08, 1996, 57)">
+                  </a> <!-- basicDetails(Duopk4809q, 09, 08, 1996, 57) -->
+                  <span class="method-name">basicDetails</span>
+                  <span class="parameters">(Duopk4809q, 09, 08, 1996, 57)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="basicDetails(DUOPK4809Q, 09, 08, 1996, 573201)">
+                  </a> <!-- basicDetails(DUOPK4809Q, 09, 08, 1996, 573201) -->
+                  <span class="method-name">basicDetails</span>
+                  <span class="parameters">(DUOPK4809Q, 09, 08, 1996, 573201)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="basicDetailsRadio">
+                  </a> <!-- basicDetailsRadio -->
+                  <span class="method-name">basicDetailsRadio</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="businessDetails">
+                  </a> <!-- businessDetails -->
+                  <span class="method-name">businessDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkbox">
+                  </a> <!-- checkbox -->
+                  <span class="method-name">checkbox</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="documentsForKYC">
+                  </a> <!-- documentsForKYC -->
+                  <span class="method-name">documentsForKYC</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loanEligibility">
+                  </a> <!-- loanEligibility -->
+                  <span class="method-name">loanEligibility</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loanOffer">
+                  </a> <!-- loanOffer -->
+                  <span class="method-name">loanOffer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="personalDetails">
+                  </a> <!-- personalDetails -->
+                  <span class="method-name">personalDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="personalInformationScripts(123!@#, Karthi@qwe)">
+                  </a> <!-- personalInformationScripts(123!@#, Karthi@qwe) -->
+                  <span class="method-name">personalInformationScripts</span>
+                  <span class="parameters">(123!@#, Karthi@qwe)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="personalInformationScripts(0123, 08123)">
+                  </a> <!-- personalInformationScripts(0123, 08123) -->
+                  <span class="method-name">personalInformationScripts</span>
+                  <span class="parameters">(0123, 08123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="personalInformationScripts(Karthik, 12!)">
+                  </a> <!-- personalInformationScripts(Karthik, 12!) -->
+                  <span class="method-name">personalInformationScripts</span>
+                  <span class="parameters">(Karthik, 12!)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="personalInformationScripts(Karthik()(), Karthi@gmail)">
+                  </a> <!-- personalInformationScripts(Karthik()(), Karthi@gmail) -->
+                  <span class="method-name">personalInformationScripts</span>
+                  <span class="parameters">(Karthik()(), Karthi@gmail)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="personalInformationScripts(Karthik raj t, karthirajgowda@gmail.com)">
+                  </a> <!-- personalInformationScripts(Karthik raj t, karthirajgowda@gmail.com) -->
+                  <span class="method-name">personalInformationScripts</span>
+                  <span class="parameters">(Karthik raj t, karthirajgowda@gmail.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="phoneNumberVerification">
+                  </a> <!-- phoneNumberVerification -->
+                  <span class="method-name">phoneNumberVerification</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="phoneNumberVerificationOTP">
+                  </a> <!-- phoneNumberVerificationOTP -->
+                  <span class="method-name">phoneNumberVerificationOTP</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="uploadAadhaar">
+                  </a> <!-- uploadAadhaar -->
+                  <span class="method-name">uploadAadhaar</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="uploadSelfie">
+                  </a> <!-- uploadSelfie -->
+                  <span class="method-name">uploadSelfie</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddress">
+                  </a> <!-- verifyAddress -->
+                  <span class="method-name">verifyAddress</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\user1\AppData\Local\Temp\testng-eclipse-1298010085\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Tests.KB_Flow&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(23);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyAddress')
+data.setCell(0, 2, 'Tests.KB_Flow')
+data.setCell(0, 3, 23614);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'uploadAadhaar')
+data.setCell(1, 2, 'Tests.KB_Flow')
+data.setCell(1, 3, 16814);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loanEligibility')
+data.setCell(2, 2, 'Tests.KB_Flow')
+data.setCell(2, 3, 13731);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'uploadSelfie')
+data.setCell(3, 2, 'Tests.KB_Flow')
+data.setCell(3, 3, 12443);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'basicDetailsRadio')
+data.setCell(4, 2, 'Tests.KB_Flow')
+data.setCell(4, 3, 3511);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'personalDetails')
+data.setCell(5, 2, 'Tests.KB_Flow')
+data.setCell(5, 3, 3244);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'loanEligibilityAcceptLoanOffer')
+data.setCell(6, 2, 'Tests.KB_Flow')
+data.setCell(6, 3, 3059);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'loanOffer')
+data.setCell(7, 2, 'Tests.KB_Flow')
+data.setCell(7, 3, 2715);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'checkbox')
+data.setCell(8, 2, 'Tests.KB_Flow')
+data.setCell(8, 3, 2458);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'businessDetails')
+data.setCell(9, 2, 'Tests.KB_Flow')
+data.setCell(9, 3, 2157);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'documentsForKYC')
+data.setCell(10, 2, 'Tests.KB_Flow')
+data.setCell(10, 3, 2066);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'phoneNumberVerificationOTP')
+data.setCell(11, 2, 'Tests.KB_Flow')
+data.setCell(11, 3, 1648);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'basicDetails')
+data.setCell(12, 2, 'Tests.KB_Flow')
+data.setCell(12, 3, 1503);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'basicDetails')
+data.setCell(13, 2, 'Tests.KB_Flow')
+data.setCell(13, 3, 1375);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'basicDetails')
+data.setCell(14, 2, 'Tests.KB_Flow')
+data.setCell(14, 3, 1364);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'basicDetails')
+data.setCell(15, 2, 'Tests.KB_Flow')
+data.setCell(15, 3, 1342);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'personalInformationScripts')
+data.setCell(16, 2, 'Tests.KB_Flow')
+data.setCell(16, 3, 1288);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'personalInformationScripts')
+data.setCell(17, 2, 'Tests.KB_Flow')
+data.setCell(17, 3, 1205);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'personalInformationScripts')
+data.setCell(18, 2, 'Tests.KB_Flow')
+data.setCell(18, 3, 1201);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'personalInformationScripts')
+data.setCell(19, 2, 'Tests.KB_Flow')
+data.setCell(19, 3, 1199);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'personalInformationScripts')
+data.setCell(20, 2, 'Tests.KB_Flow')
+data.setCell(20, 3, 1182);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'phoneNumberVerification')
+data.setCell(21, 2, 'Tests.KB_Flow')
+data.setCell(21, 3, 53);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'youveGotALoanOf')
+data.setCell(22, 2, 'Tests.KB_Flow')
+data.setCell(22, 3, 0);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.KB_Flow</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">checkbox</span>
+                <span class="method-start">5854 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">personalInformationScripts(0123, 08123)</span>
+                <span class="method-start">9086 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">personalInformationScripts(Karthik, 12!)</span>
+                <span class="method-start">10376 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">personalInformationScripts(123!@#, Karthi@qwe)</span>
+                <span class="method-start">11578 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">personalInformationScripts(Karthik()(), Karthi@gmail)</span>
+                <span class="method-start">12761 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">personalInformationScripts(Karthik raj t, karthirajgowda@gmail.com)</span>
+                <span class="method-start">13967 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">phoneNumberVerification</span>
+                <span class="method-start">15167 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">phoneNumberVerificationOTP</span>
+                <span class="method-start">15221 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">basicDetailsRadio</span>
+                <span class="method-start">16870 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">basicDetails(Duopk4809, 09, 08, 19, 573201)</span>
+                <span class="method-start">20425 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">basicDetails(Duopk4809q, 09, 08, 1996, 57)</span>
+                <span class="method-start">21929 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">basicDetails(Duopk4809, 09, 08, 1996, 573201)</span>
+                <span class="method-start">23274 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">basicDetails(DUOPK4809Q, 09, 08, 1996, 573201)</span>
+                <span class="method-start">24651 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loanEligibility</span>
+                <span class="method-start">26016 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loanOffer</span>
+                <span class="method-start">39748 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">businessDetails</span>
+                <span class="method-start">42464 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">personalDetails</span>
+                <span class="method-start">44622 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">documentsForKYC</span>
+                <span class="method-start">47868 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">uploadSelfie</span>
+                <span class="method-start">49936 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">uploadAadhaar</span>
+                <span class="method-start">62380 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyAddress</span>
+                <span class="method-start">79195 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loanEligibilityAcceptLoanOffer</span>
+                <span class="method-start">102810 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">youveGotALoanOf</span>
+                <span class="method-start">105873 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
