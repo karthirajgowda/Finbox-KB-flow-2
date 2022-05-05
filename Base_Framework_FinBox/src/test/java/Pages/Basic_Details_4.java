@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import Generic.UtilityMethods;
 
@@ -17,6 +18,14 @@ public class Basic_Details_4 extends UtilityMethods{
 	public Basic_Details_4(WebDriver driver) 
 	{
 		PageFactory.initElements(driver, this);
+	}
+	
+	//FINBOX LOGO
+	@FindBy(xpath = "//img[@src=\"/static/media/finBoxDark.88f38f8f.svg\"]")
+	List<WebElement> FinboxLogo;
+	public void isFinboxlogoDisplayed()
+	{
+		isDisplayed(FinboxLogo, "FinBox Logo  ");
 	}
 	
 	//GENDER MALE 
@@ -32,8 +41,9 @@ public class Basic_Details_4 extends UtilityMethods{
 	//GENDER FEMALE
 	@FindBy(xpath="(//input[@type=\"radio\"])[1]")
 	WebElement GenderF;
-	public void clickOnGenderFandVerify() throws InterruptedException
+	public void clickOnGenderFandVerify(WebDriverWait wait) throws InterruptedException
 	{
+		waitUntillElementToBeClickable(wait, GenderF);
 		clickAction(GenderF);
 		Thread.sleep(1000);
 		isSelected(GenderF,"Female");
@@ -55,6 +65,11 @@ public class Basic_Details_4 extends UtilityMethods{
 	public void verifyAndClickOnNextButton()
 	{
 		verifyAndClick(nextButton, "Verifing Next button is enabled or not after clicking on Radio button");	
+	}
+	public void clickOnNextButton()
+	{
+		clickAction(nextButton);
+		System.out.println("Clicked on NEXT button");
 	}
 	
 	//PAN 

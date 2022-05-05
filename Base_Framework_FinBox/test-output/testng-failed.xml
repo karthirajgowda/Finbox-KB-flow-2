@@ -6,7 +6,6 @@
       <class name="Tests.KB_Flow">
         <methods>
           <include name="documentsForKYC"/>
-          <include name="loanOffer"/>
           <include name="uploadAadhaar"/>
           <include name="checkbox"/>
           <include name="personalDetails"/>
@@ -15,6 +14,8 @@
           <include name="openBrowser"/>
           <include name="uploadSelfie"/>
           <include name="phoneNumberVerificationOTP"/>
+          <include name="loanOffer1"/>
+          <include name="loanOffer2"/>
           <include name="phoneNumberVerification"/>
           <include name="businessDetails"/>
           <include name="basicDetails"/>

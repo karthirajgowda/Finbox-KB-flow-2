@@ -1,8 +1,11 @@
 package Generic;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.FileInputStream;
-import java.time.Duration;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Set;
@@ -11,7 +14,6 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -20,17 +22,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
  
+public class UtilityMethods extends Base_test{//EXTENDED BASE_TEST BECAUSE BASE TEST EXTENDS uat ,AND uat CONYAINS COUSTOMER ID WHICH IS NEEDED FOR KYC PAGE
 
-
-public class UtilityMethods {
-
-
-
-	public WebDriver driver;	
+	public  WebDriver driver;	
 	public static Sheet sheet;
 	
-	
-	//Accept Alert
 	public static  ChromeOptions acceptAlert()
 	{
 		 ChromeOptions options=new ChromeOptions();
@@ -40,6 +36,7 @@ public class UtilityMethods {
 			HashMap<String,Object> prefs= new HashMap<String,Object>();
 			
 			contentSettings.put("media_stream", 1);
+			contentSettings.put("geolocation", 1);
 			profile.put("managed_default_content_settings", contentSettings);
 			prefs.put("profile", profile);
 			options.setExperimentalOption("prefs",prefs); 
@@ -47,11 +44,65 @@ public class UtilityMethods {
 			return options ;
 	}
 	
+   //WAIT UNTIL VISIBILITY OF ELE
+	public void waitUntillVisibility(WebDriverWait wait,WebElement element)
+	{
+		wait.until(ExpectedConditions.visibilityOf(element));
+	}
+	
+	  //WAIT UNTIL CLICKABLE OF ELE
+		public void waitUntillElementToBeClickable(WebDriverWait wait,WebElement element)
+		{
+			wait.until(ExpectedConditions.elementToBeClickable(element));
+		}
+		
+	//CREATE NEW TAB
+	public static void createNewTab() throws InterruptedException, AWTException
+	{
+		Thread.sleep(1000);
+		Robot r = new Robot();
+		Thread.sleep(1000);
+		r.keyPress(KeyEvent.VK_CONTROL);
+		r.keyPress(KeyEvent.VK_T);
+		r.keyRelease(KeyEvent.VK_CONTROL);
+		r.keyRelease(KeyEvent.VK_T);
+		Thread.sleep(2000);	
+	}
+	//SWITCH TO PARTICULAR TAB
+	public  void switchToTab(int n) throws InterruptedException
+	{
+		ArrayList<String> tabs=new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(tabs.get(n));
+		Thread.sleep(2000);
+	}
+	
+	//Accept Alert
+	
 	//loan amount 
 	public String getloanamount(WebElement element)
 	{
 		String amount = element.getText();
 		String lm = amount.substring(2, 8);
+		return lm;
+	}
+	//LOAN amount Loan_Eligibility_FillApplicationForm_5
+	public String getloanamount1(WebElement element)
+	{
+		String amount = element.getText();
+		String lm = amount.substring(2, amount.length()-1);
+		return lm;
+	}
+	
+	public String getValueForPage6_13(WebElement element)
+	{
+		String amount = element.getText();
+		String lm = amount.substring(2, amount.length());
+		return lm;
+	}
+	public String getValueForPage6SelectedLoan(WebElement element)
+	{
+		String amount = element.getText();
+		String lm = amount.substring(4, 6);
 		return lm;
 	}
 	
@@ -72,16 +123,16 @@ public class UtilityMethods {
 	}
 	
 	//Slide
-	public void slideTheBar(WebElement element ,WebDriver driver)
+	public void slideTheBar(WebElement element ,WebDriver driver) throws InterruptedException
 	{
 		Actions action=new Actions(driver);
-		action.dragAndDropBy(element, -200,0).build().perform();
+		Thread.sleep(1000);
+		action.dragAndDropBy(element, 200,0).build().perform();
 	}
 	
 	//VERIFY AND CLICK
 	public void verifyAndClick(WebElement element, String text) {
 		boolean selected = element.isEnabled();
-		System.out.println("******");
 		if (selected==true) {
 		System.out.println(text+" is ENABLED and CLICKED");
 			clickAction(element);
@@ -91,6 +142,18 @@ public class UtilityMethods {
 			System.out.println(text +"\n"+ " > ELEMENT IS NOT ENABLED      ----EXPECTED----");
 		}
 
+	}
+	
+	//IS ENABLED
+	public void isEnabled(WebElement element, String text) {
+		boolean enabled = element.isEnabled();
+		if (enabled) {
+		System.out.println(text+" **ENABLED** ");
+		}
+		else
+		{
+			System.out.println(text +" **NOT ENABLE**");
+		}
 	}
 	
 	
